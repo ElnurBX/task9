@@ -15,19 +15,33 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <header>
+<body> 
+    <details class="menu">
+                <summary class="sum1">
+                <i class="fa-solid fa-bars icon1"></i>
+                <i class="fa-solid fa-x icon2"></i>
+                </summary>
+                <nav>
+                    <h3><a href="#page-top">Start Bootstrap</a></h3>
+                    <ul>
+                        <li><a href="#page-top">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+                </nav>
+    </details> 
+    <header id="page-top">
         <div class="header__descriptions">
             <h1>Stylish Portfolio</h1>
             <h3>A Free Bootstrap Theme by Start Bootstrap</h3>
-            <a href="#" class="button btn-b">Find Out More</a>
+            <a href="#about" class="button btn-b">Find Out More</a>
         </div>
-        <dib class="navbar">
-            <i class="fa-solid fa-bars"></i>
-        </dib>
     </header>
     <main>
-        <section class="first">
+        <section class="first" id="about">
             <div class="row">
             <div class="container">
                 
@@ -38,12 +52,12 @@
                         <p>This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
                             <a href="#">Unsplash</a> !
                         </p>
-                        <a href="#" class="button btn-dark">What We Offer</a>
+                        <a href="#service" class="button btn-dark">What We Offer</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="service">
+        <section id="service" class="service">
             <div class="row">
                 <div class="container">
                     <div class="service__header">
@@ -93,7 +107,7 @@
             </div>
         </div>
         </section>
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <div class="row">
             <div class="container  portfolio__box ">
                 <div class="portfolio__header  ">
@@ -164,7 +178,7 @@
             </div>
         </div>
         </section>
-        <div class="maps">
+        <div class="maps" id="contact">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3039.7491410365333!2d49.81287802632801!3d40.370086408476446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2saz!4v1710683097246!5m2!1sen!2saz"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"

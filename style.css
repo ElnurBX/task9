@@ -5,23 +5,80 @@
     list-style: none;
     font-family: "Source Sans 3", sans-serif;
 }
+:root{
+    scroll-behavior: smooth;
+}
+a{
+    cursor: pointer;
+}
+/* navbar */
+nav a{
+    text-decoration: none;
+    color: #ffffff;
 
-
-.navbar{
-    background-color: #0000008e;
-    width: 50px;
-    height: 50px;
+}
+nav h3{
+    line-height: 48px;
+    padding: 1rem ;
+    font-weight: 400;
+    background-color: rgba(52, 58, 64, 0.15);
+}
+nav ul li{
+    padding: 1rem;
+}
+details.menu[open]{
     position: absolute;
-    top: 1rem;
-    right: 1rem;
     position: fixed;
-    border-radius: 5px;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 3;
+    background-color: #1D809F;
+}
+
+details.menu{ 
+    position: fixed;
+    position: absolute; 
+    z-index: 3;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    transition: 1s; 
+    background-color: #1D809F;   
+}
+
+.sum1{
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
-    color: #fff;
+    width: 50px;
+    height: 50px;
+    background-color: #00000067;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    position: fixed;
+    border-radius: 5px;
+
 }
+.sum1:hover{
+    background-color: #000000c7;
+}
+details.menu[open] .icon1{
+    display: none;
+}
+details.menu .icon2{
+    display: none;
+}
+details.menu[open] .icon2{
+    display: table;
+}
+/* header */
 header{
     display: flex;
     justify-content: center;
@@ -336,6 +393,21 @@ footer p{
     width: 100%;
     margin: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsiv */
 @media only screen and (max-width:2580px) {
     .container{  
@@ -451,7 +523,6 @@ footer p{
     }
 }
 @media only screen and (width:320px){
-    
     .container{
         max-width: 300px;
         padding:0;
