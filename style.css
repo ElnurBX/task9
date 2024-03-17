@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+
+.navbar{
+    background-color: #0000008e;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    position: fixed;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header__descriptions{
+    text-align: center;
+    padding: 0 30px;   
+}
+.header__descriptions h1{
+    font-weight: 700;
+    font-size: 5.5rem;
+}
+.header__descriptions h3{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+/* buttons */
+.button{
+    display: inline-block;
+    text-decoration: none;
+
+
+    border-radius: 6px;
+    padding: 1.25rem 2.5rem;
+
+}
+.btn-b{
+    background-color:#1D809F ;
+    color: #fff;
+}
+.btn-b:hover{
+    background: #196d87;
+    color: #fff;
+}
+.btn-dark{
+background-color: #212529;
+color: #fff !important;
+}
+.btn-dark:hover{
+    background: #424649;
+
+}
+.btn-w{
+    background-color: #ffffff;
+color: #000000 !important;
+}
+.btn-w:hover{
+    background-color: #d8d8d8;
+    color: #000000 !important;
+}
+/* first section */
+.first{
+    text-align: center;
+    padding: 7.5rem 0;
+}
+.first h2{
+    font-size:2rem ;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+.first p{
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.first p a{
+    color: #1D809F;
+}
+/* service section */
+.service{
+    color: #fff;
+    background-color: rgb( 29, 128, 159);
+    padding: 7.5rem 0;
+    text-align: center;
+}  
+.service__header h3{
+    font-size: 1rem;
+    color: #ecb807;
+}
+.service__header h2{
+    font-size:3rem ;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+.service__cards .card{
+    padding: 0 1rem;
+}
+.service__cards {
+    flex-wrap: wrap;
+}
+.service .card span{
+    background-color: #fff;
+    color: #1D809F;
+    height: 7rem;
+    width: 7rem;
+    display: block;
+    line-height: 7.5rem;
+    font-size: 2.25rem;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    color: #196d87;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.service .card h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.service__cards .card p{
+    display: inline-block;
+    font-size: 1rem;
+    color: #ffffffb3; 
+}
+ /* callout */
+.callout{
+    padding: 15rem 0;
+    text-align: center;
+    background-image:linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1)), url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg);
+    background-size: cover;
+}
+.callout h2{
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+/* portfolio */
+.portfolio{
+    padding: 7.5rem 0;
+}
+.portfolio__header{
+text-align: center;
+}
+.portfolio__header h3{
+    font-size: 1rem;
+    color: #ecb807;
+}
+.portfolio__header h2{
+    font-size:3rem ;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+.portfolio__box{
+    padding: 0 3rem;
+}
+.portfolio_cards__card{
+    height: 340px;
+    position: relative;
+} 
+.portfolio_cards__card__discrip{
+    left: 5%;
+    right:5%;
+    bottom: 5%;
+    position: absolute;
+    z-index: 1;
+    color: #ffffff;
+}
+.portfolio_cards__card  img{
+    transition: 0.3s;
+    position: absolute;
+    height: 350px;
+    width: 100%;
+}
+.portfolio_cards__card__discrip h2{
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.portfolio_cards__card__discrip p{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+.cuter{
+    background-color: #196d8700;
+    position: absolute;
+    z-index: 2;
+    transition: 0.25s ease-out;
+    width: 100%;
+    height: 350px;
+    border:0px white solid;
+}
+.portfolio_cards__card:hover .cuter{
+    border:1.5rem solid white;
+    z-index: 2;
+
+    background-color: #17677fb1;
+    
+}
+/* content */
+
+.content{
+    background-color: #1d809f;
+    padding: 7.5rem 0;
+    text-align: center;
+    color: #ffffff;
+}
+.content h2{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+/* maps */
+.maps iframe{
+    width: 100%;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+footer ul{
+    margin-bottom: 3rem !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+
+}
+footer ul li{
+    margin: 0  0.5rem 0 0 !important;
+    width: 4rem;
+    height: 4rem;
+}
+footer ul li a{
+    color: #ffffff;
+    font-size:1.5rem ;
+    text-align: center;
+    line-height: 4.5rem;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-color: #1D809F;
+    border-radius: 50%;
+}
+footer p{
+    font-size: 0.875em;
+    color: #6c757d;
+}
+/*cols */
+.container{
+    max-width:  1220px;
+    margin: 0 auto;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    row-gap: 10px;
+}
+.col-1{
+    width: calc(100% / 12);
+    margin: 0 auto;
+}
+.col-2{
+    width: calc(100% / 6);
+    margin: 0 auto;
+}
+.col-3{
+    width: calc(100% / 4);
+    margin: 0 auto;
+}
+.col-4{
+    width: calc(100% / 3);
+    margin: 0 auto;
+}
+.col-5{
+    width: calc(100% / 12 *5);
+    margin: 0 auto;
+}
+.col-6{
+    
+    width: calc(100% / 2);
+    margin: 0 auto;
+}
+.col-7{
+    width: calc(100% / 12 * 7);
+    margin: 0 auto;
+}
+.col-8{
+    width: calc(100% / 3 * 2);
+    margin: 0 auto;
+}
+.col-9{
+    width: calc(100% / 4 * 3);
+    margin: 0 auto;
+}
+.col-10{
+    width: calc(100% / 6 * 5);
+    margin: 0 auto;
+}
+.col-11{
+    width: calc(100% / 12 * 11);
+    margin: 0 auto;
+}
+.col-12{
+    width: 100%;
+    margin: auto;
+}
+/* responsiv */
+@media only screen and (max-width:2580px) {
+    .container{  
+        width: 2200px;
+    }
+    
+}
+@media only screen and (max-width:1440px){
+    .container{
+        width: 1140px;
+    }
+}
+@media only screen and (max-width:1200px) {
+    .container{
+        width: 960px;
+    }
+    .lg-1{
+        width: calc(100% / 12);
+    }
+    .lg-2{
+        width: calc(100% / 6);
+    }
+    .lg-3{
+        width: calc(100% / 4);
+    }
+    .lg-4{
+        width: calc(100% / 3);
+    }
+    .lg-5{
+        width: calc(100% / 12 *5);
+    }
+    .lg-6{
+        width: calc(100% / 2);
+    }
+    .lg-7{
+        width: calc(100% / 12 * 7);
+    }
+    .lg-8{
+        width: calc(100% / 3 * 2);
+    }
+    .lg-9{
+        width: calc(100% / 4 * 3);
+    }
+    .lg-10{
+        width: calc(100% / 6 * 5);
+    }
+    .lg-11{
+        width: calc(100% / 12 * 11);
+    }
+    .lg-12{
+        width: 100%;
+    }
+    .header__descriptions h1{
+        font-weight: 700;
+        font-size: 4rem;
+    }
+    .callout h2{
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .container{
+        width: 100%;
+        padding: 1rem;
+    }
+    .sm-1{
+        width: calc(100% / 12);
+    }
+    .sm-2{
+        width: calc(100% / 6);
+    }
+    .sm-3{
+        width: calc(100% / 4);
+    }
+    .sm-4{
+        width: calc(100% / 3);
+    }
+    .sm-5{
+        width: calc(100% / 12 *5);
+    }
+    .sm-6{
+        width: calc(100% / 2);
+    }
+    .sm-7{
+        width: calc(100% / 12 * 7);
+    }
+    .sm-8{
+        width: calc(100% / 3 * 2);
+    }
+    .sm-9{
+        width: calc(100% / 4 * 3);
+    }
+    .sm-10{
+        width: calc(100% / 6 * 5);
+    }
+    .sm-11{
+        width: calc(100% / 12 * 11);
+    }
+    .sm-12{
+        width: 100%;
+    }
+    .header__descriptions h1{
+        font-weight: 700;
+        font-size: 4rem;
+    }
+    .callout h2{
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+}
+@media only screen and (width:320px){
+    
+    .container{
+        max-width: 300px;
+        padding:0;
+    }
+    .header__descriptions{
+        text-align: center;
+        padding: 0;
+    }
+    .header__descriptions h1{
+        font-weight: 700;
+        font-size: 4rem;
+    }
+    .callout h2{
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .sm-1{
+        width: calc(100% / 12);
+    }
+    .sm-2{
+        width: calc(100% / 6);
+    }
+    .sm-3{
+        width: calc(100% / 4);
+    }
+    .sm-4{
+        width: calc(100% / 3);
+    }
+    .sm-5{
+        width: calc(100% / 12 *5);
+    }
+    .sm-6{
+        width: calc(100% / 2);
+    }
+    .sm-7{
+        width: calc(100% / 12 * 7);
+    }
+    .sm-8{
+        width: calc(100% / 3 * 2);
+    }
+    .sm-9{
+        width: calc(100% / 4 * 3);
+    }
+    .sm-10{
+        width: calc(100% / 6 * 5);
+    }
+    .sm-11{
+        width: calc(100% / 12 * 11);
+    }
+    .sm-12{
+        width: 100%;
+    }
+  
+}
